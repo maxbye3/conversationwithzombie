@@ -1,0 +1,30 @@
+/*
+* KINDNESS SCREEN
+*/
+.kindnessScreen .goHome{
+   float: right;
+}
+
+.kindnessScreen .deedInput{
+  width: 100%;
+}
+
+.kindnessScreen .whoDropdown {
+  float: left;  
+  width: 20%;
+}
+
+.kindnessScreen .whoInput{
+   width: 80%;
+   float: left;
+}
+
+.kindnessScreen .kindSubmit{
+  width: 100%;
+}
+
+.kindnessScreen .whoDropdown img{
+   width: 30px;
+   margin-left: -10px;
+   margin-right: 10px;
+}

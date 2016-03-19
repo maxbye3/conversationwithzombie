@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="Kindness Deeds Page">
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+<link href="css/kindStyle.css" rel="stylesheet" type="text/css" />
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+  <meta charset="utf-8">
+  
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+  
+  <script src="js/kindScript.js"></script>
+  
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  
+  
+<div class="calanderView">  
+  <div id="messagesDiv"></div>
+</div>  
+  
+<div class="kindnessScreen">  
+  
+
+  <h1>Kindness</h1>
+
+
+  <div class="dropdown whoDropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    To Who
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+    <li onclick="pronounInput('single')"><a><img src="http://icons.iconarchive.com/icons/custom-icon-design/silky-line-user/128/user-icon.png" width="30px">Single Person</a></li>
+    
+    <li role="separator" class="divider"></li>
+    <li onclick="pronounInput('group')"><a><img src="http://icons.iconarchive.com/icons/custom-icon-design/silky-line-user/128/users-icon.png" width="30px">Group</a></li>
+  </ul>
+</div>
+  
+  <div class="input-group whoInput">
+    <input type="text" class="whoForm form-control" placeholder="Who " aria-describedby="basic-addon1">
+  </div>
+   
+  <div class="input-group deedInput">
+    <input type="text" class="deedForm form-control" placeholder="Deed" aria-describedby="basic-addon1"> 
+  </div>
+  
+  
+  <button class="btn btn-success kindSubmit" onclick="saveKindness()">submit</button>
+
+  </div>
+  
+</body>
+</html>
